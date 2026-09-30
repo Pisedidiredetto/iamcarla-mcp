@@ -62,6 +62,18 @@ Every tool result is an envelope: `{ok, data, pending_id?, preview?, undo_token?
 
 Limits: 120 calls per minute per token; at most 30 queued confirmations per hour per agent. Access tokens last one hour, refresh tokens thirty days (rotated on every use).
 
+## Staff (agency) connections
+
+Agency staff can connect their own agent too, with a separate, read-only tool set:
+
+| Account | Pairing code from | Tools |
+|---|---|---|
+| Segretaria | her Collaboratore (or the Super Admin) | leads, agenda and reminders of the clients she is assigned to |
+| Collaboratore | the Super Admin | portfolio statistics, contracts, attention summary for the clients on his book |
+| Super Admin | himself, from his own profile | the same tools over every client |
+
+Staff grants never include client write levels, and staff sessions impersonating a customer cannot connect anything.
+
 ## Revoking access
 
 - The owner sees connected agents under *Profilo → Agenti collegati* and can revoke any connection they approved.

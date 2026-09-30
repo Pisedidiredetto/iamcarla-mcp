@@ -3,6 +3,19 @@
 The version here is `MCP_SERVER_VERSION` in `new_visu/mcp_connector/__init__.py`; it is what
 `initialize` reports, what `/mcp/manifest.json` shows, and what `server.json` publishes.
 
+## 1.1.0 — 2026-09-30
+
+- Staff connections: a Collaboratore, a Segretaria or the Super Admin can connect their own agent
+  and get the read-only agency tool set (`staff` scope, never client write levels). The Super Admin's
+  agent sees every client through the collaboratore tools; a Collaboratore's is scoped to his book; a
+  Segretaria's to her assignments.
+- Pairing codes for staff: the Super Admin issues them for any staff member and for himself (from
+  his own profile); a Collaboratore issues them for the segretarie on his book.
+- "Collega un agente" panel on the profile page: endpoint, steps, copy buttons and install links for
+  Claude, Claude Code, Cursor and VS Code, plus `GET /api/account/mcp-connect`.
+- Ghost (impersonation) sessions cannot consent, list, revoke or issue anything on the
+  impersonated account.
+
 ## 1.0.0 — 2026-09-30
 
 Initial public release.
