@@ -1,0 +1,11 @@
+Documentation licence
+
+The documentation in this repository (README.md, TOOLS.md, SECURITY.md, PRIVACY.md,
+CHANGELOG.md, server.json) is licensed under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+The example code under examples/ is licensed under the MIT licence.
+
+The IamCarla MCP server and the IamCarla application are proprietary software and are
+not covered by this licence. "IamCarla" and "Carla" are names used by the IamCarla
+service; no trademark rights are granted.
